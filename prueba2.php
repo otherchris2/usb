@@ -2,6 +2,6 @@
 <?php
 
 
-    echo "Se ha agregado tu curso"."<br>".$sql;
+    echo "Se ha agregado tu curso"."<br>";
 
 ?>
