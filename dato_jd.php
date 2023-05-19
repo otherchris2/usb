@@ -10,6 +10,6 @@ $client = new MongoDB\Client(
    $con=$client ->test ->user;
    $cur=$con->find();
    $datos=iterator_to_array($cur);
-   echo $datos[0];
+   echo $datos;
 
 ?>
