@@ -5,7 +5,7 @@ $client = new MongoDB\Client('mongodb+srv://yo:abc13579@cluster0.bosd3.mongodb.n
 $con=$client->TallerAuto->Vehiculo;
 
 //"Select *from vehiculo"
-//$cur=$con->find();
+$cur=$con->find();
 //************** */
 //echo $cur;
 $datos=iterator_to_array($cur);
