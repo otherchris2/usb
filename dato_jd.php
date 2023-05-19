@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 //Variables de entrada
-echo "awaw";
+//echo "awaw";
 //--------------------------------------
 $client = new MongoDB\Client(
     '
