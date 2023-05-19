@@ -8,8 +8,12 @@
     $con=$client->Test->user;
 
     $cur=$con->find();
+    foreach($cur as $document){
+        echo $document["name"] . "<br>";
+        
+    }
 
-    $datos=iterator_to_array($cur);
-    echo $datos;
+    // $datos=iterator_to_array($cur);
+    // echo $datos;
 
 ?>
