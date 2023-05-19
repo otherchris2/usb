@@ -7,7 +7,7 @@ $con=$client->TallerAuto->Vehiculo;
 //"Select *from vehiculo"
 //$cur=$con->find();
 //************** */
-echo $cur;
+//echo $cur;
 $datos=iterator_to_array($cur);
 echo $datos;
 
