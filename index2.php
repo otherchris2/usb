@@ -8,6 +8,6 @@ $con=$client->TallerAuto->Vehiculo;
 $cur=$con->find();
 //************** */
 $datos=iterator_to_array($cur);
-echo $datos;
+echo $datos[0];
 
 ?>
