@@ -5,4 +5,11 @@
     $client = new MongoDB\Client(
     'mongodb+srv://cristian:bases123@cluster0.bosd3.mongodb.net/lluvia?retryWrites=true&w=majority');
 
+    $con=$client->Test->user;
+
+    $cur=$con->find();
+
+    $datos=iterator_to_array($cur);
+    echo $datos;
+
 ?>
