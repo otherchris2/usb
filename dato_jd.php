@@ -8,7 +8,7 @@ $client = new MongoDB\Client(
     '
     mongodb+srv://jd:12345@cluster0.vwpxcac.mongodb.net/?retryWrites=true&w=majority');
 
-   $con=$client ->Test ->user;
+   $con=$client ->test ->user;
    $cur=$con->find();
    $datos=iterator_to_array($cur);
    echo $datos;
