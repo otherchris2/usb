@@ -7,7 +7,7 @@ $client = new MongoDB\Client('mongodb+srv://ClaseBD:ClaseDB02@cluster0.qn4pt8b.m
 $con=$client->Test->post;
 
 $cur=$con->find();
-echo $cur;
+
 $datos= iterator_to_array($cur);
 echo $datos;
 
