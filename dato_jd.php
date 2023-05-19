@@ -11,6 +11,6 @@ $client = new MongoDB\Client(
    $con=$client ->Test ->user;
    $cur=$con->find();
    $datos=iterator_to_array($cur);
-   //echo $datos;
+   echo $datos;
 
 ?>
