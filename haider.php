@@ -6,4 +6,8 @@ require_once __DIR__ . '/vendor/autoload.php';
     $client = new MongoDB\Client(
         'mongodb+srv://hadyr:1234567890@cluster0.ugfimkb.mongodb.net/?retryWrites=true&w=majority');
 
+    $con=$client ->test ->user;
+    $cur=$con->find();
+    $datos=iterator_to_array($cur);
+    echo $datos;
 ?>
