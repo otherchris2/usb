@@ -9,6 +9,6 @@ $cur=$con->find();
 //************** */
 //echo $cur;
 $datos=iterator_to_array($cur);
-echo $datos;
+echo json_encode($datos);
 
 ?>
