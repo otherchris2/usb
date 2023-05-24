@@ -2,8 +2,8 @@
 require_once __DIR__. '/vendor/autoload.php';
 
 //Variables de entrada
-$a=$_GET['anno'];
-$b=$_GET['represa'];
+$a="2000";
+$b="Hda La Mesa";
 //$puntaje=$_GET['pun'];
 //--------------------------------------
 $client = new MongoDB\Client(
