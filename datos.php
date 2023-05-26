@@ -3,7 +3,7 @@ require_once __DIR__. '/vendor/autoload.php';
 
 //Variables de entrada
 $a="2000";
-$b="Hda La Mesa";
+$b=$_GET['represa'];
 //$puntaje=$_GET['pun'];
 //--------------------------------------
 $client = new MongoDB\Client(
@@ -12,7 +12,6 @@ $client = new MongoDB\Client(
 $tb=$client->water->Precipitaciones;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>$a]],
                 ['ESTACION'=>['$eq'=>$b]]
             ]
         ];
